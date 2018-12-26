@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          #uri: https://gitee.com/weibo-1907327477/config-repo.git
+          uri: https://gitee.com/weibo-1907327477/config-dev-v1.git
+          username: 1209867203@qq.com
+          password: senlin13268118151
+          basedir: D:\workspace\example_micro\config\basedir
+          #basedir: D:\workspace\study_demo\springcloud_sell\config\basedir
+#  rabbitmq:
+#      #addresses: 127.0.0.1
+#      addresses: 47.93.223.141
+#      port: 5672
+#      username: guest
+#      password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+#  security:
+#    enabled: false
+#spring:
+#  boot:
+#    admin:
+#      client:
+#        url: "http://localhost:18080"
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
